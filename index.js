@@ -18,6 +18,8 @@ app.get('/', (req, res) => {
   res.send('API is running...')
 })
 
+console.log(url)
+
 app.use('/api/users', userRoutes)
 
 app.use(notFound)
